@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.img{
+  display: block;
+}
+.wrap{
+    max-width: 1024px;
+    margin: 0 auto;
+    
+  }
+  .header{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+   
+  }
+  .header h1 a{
+      background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+      background-repeat: no-repeat;
+      width: 224px;
+      height: 50px;  
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      
+     
+    }
+  .headermenu{
+    display:flex;
+    justify-content: flex-end;
+    background:#f6f6f6;
+    
+  }
+
+  .headermenu a{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png
+    );
+    height: 343px;
+ 
+    display: flex;
+    align-items: center;
+   background-position: center center ;
+    background-repeat:  no-repeat   ;
+    background-size: cover;
+  }
+  .banner h2{
+      color: #fff;
+      font-size:32px;
+      padding: 30px 20px;
+      font-weight: bold;
+      line-height: 1.3;
+      /*透明度 0.6 的黑色半透明遮罩*/
+      background-color:rgba(0, 0, 0, .6);
+      width: 100%;
+  }
+ 
+  .menu{
+    display: flex;
+    align-items:center;
+  }
+  .menu li{
+    text-align:center;
+    
+  }
+  .menu a{
+    
+    color:#00cc99 ;
+    padding: 20px ;
+    font-size: 18px; 
+    font-weight: bold;
+    position: relative;
+  }
+  .menu a:after{
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0%;
+      border-bottom:5px solid transparent;
+      transition: 0.4s;
+  }
+  .menu a:hover::after{
+   width: 100%;
+   border-bottom:5px solid #00cc99;
+}
+  a{
+    display:block;
+    text-decoration: none;
+  }
+  
+  .content{
+    margin: 50px;
+  }
+  .course{
+    display: flex;
+    justify-content: space-around;
+  }
+  .courseitem h2{
+      text-align:center;
+      padding: 10px;
+      font-size:25px;
+      font-weight: bold;
+  }
+  .courseitem p{
+     line-height: 2;
+     padding: 10px;
+  }
+  .courseitem{
+      width: 300px;
+      box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      margin: 10px;
+      
+  }
+  
+  .courseitem .courseItem2 li{
+    padding:5px 15px;
+    list-style:inside;
+  }
+  .tab-default{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      
+  }
+  
+  .tab-default table{
+      margin-top: 10px;
+      
+
+  }
+  .table{
+    max-width: 996px;
+    margin: 0 auto;
+  }
+  .tab-default h2{
+      margin: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+  }
+  .tab-default th{
+      font-weight: bold;
+      background: #f7f7f7;
+  }
+  .tab-default th,.tab-default td{
+      font-size:20px;
+      padding: 10px 50px 10px 20px;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      text-align:left;
+  }
+  .tab-default .tab_1{
+      color:#44b392;
+  }
+
+
+  .pure_bg{
+    width: 800px;
+    margin:60px auto 5px;
+    padding: 30px;
+    background-image: -webkit-linear-gradient( #00664c, #009671);
+    color:white;
+    font-weight: bold;
+    
+  }
+  .pure_bg h2{
+      font-size:32px;
+      text-align: center;
+      padding: 15px 0;
+
+  }
+  .pure_form{
+      display: flex;
+      justify-content: space-around;
+     
+     
+
+  }
+  .pure-control-group{
+      display: flex;
+      flex-direction: column;
+
+  }
+  .pure-control-group label{
+     margin-top: 10px;
+  }
+  .pure-control-group input{
+      margin-top: 10px;
+      width: 300px;
+      height: 30px;
+  }
+  .pure-control-group .pure-button{
+      margin-top: 10px;
+      border: 1px solid #00cc99;
+      border-radius: 5px;
+      background: #00cc99;
+      color:white;
+      width: 80px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      align-self: flex-end;
+  }
+  .pure-control-group .pure-button:hover{
+      background: #00694f;
+  }
+  #content{
+      margin-right: 10px;
+      width: 452px;
+      resize: none;  /*在設定 cols 或 rows 屬性或是設定寬高後，teatarea 會是設定好的寬高，但是拖移右下角的小三角形會發現還是可以任意改變 textarea 的大小，若不想再改變 textarea 大小，可在 CSS 設定 resize: none*/
+      padding: 5px;
+    }
+    
+
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 150px;
+  }
+  .footer ul li{
+    display: flex;
+    padding-bottom: 5px;
+  }
+  .footer ul li a{
+      color:red;
+  }
+  .footer ul li a:hover{
+      color:blue;
+  }
